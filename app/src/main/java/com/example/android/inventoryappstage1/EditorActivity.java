@@ -102,7 +102,7 @@ public class EditorActivity extends AppCompatActivity {
         //First we check the values from the EditText views, to see if they are not null
         if (nameString.trim().equals("")) {
             mName.setError(getResources().getString(R.string.empty_field_error));
-            Toast.makeText(getBaseContext(), COLUMN_NAME + getString(R.string.cannot_be_empty), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), COLUMN_NAME + " " + getString(R.string.cannot_be_empty), Toast.LENGTH_SHORT).show();
             return;
         } else {
             values.put(COLUMN_NAME, nameString);

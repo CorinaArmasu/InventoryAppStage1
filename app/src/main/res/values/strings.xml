@@ -8,7 +8,7 @@
     <string name="supplier">Supplier</string>
     <string name="supplier_phone_number"> Phone number</string>
     <string name="save">SAVE</string>
-    <string name="cannot_be_empty"> This field cannot be empty!</string>
+    <string name="cannot_be_empty"> cannot be empty!</string>
     <string name="save_error"> Error with saving Product</string>
     <string name="added_info"> Product added!</string>
     <string name="row_id"> Row id:</string>
