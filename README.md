@@ -1,68 +1,49 @@
 ## PROJECT SPECIFICATION
 
-   News App, Stage 1
+  Inventory App, Stage 1
    
 # Layout
 
-Main Screen:
+Overall Layout:
 
-App contains a main screen which displays multiple news stories
+No UI is required for this project.
 
-List Item Contents:
+Hint: At minimum, you will need a main activity that has methods to read data, a Contract Java class, and a DbHelper Java class.
 
-Each list item on the main screen displays relevant text and information about the story.
-
-The title of the article and the name of the section that it belongs to are required field.
-
-If available, author name and date published should be included. Please note not all responses will contain these pieces of data, but it is required to include them if they are present.
-
-Images are not required.
-
-Layout Best Practices:
-
-The code adheres to all of the following best practices:
-
-* Text sizes are defined in sp
-* Lengths are defined in dp
-* Padding and margin is used appropriately, such that the views are not crammed up against each other.
+Note: Even though UI is not required for this Stage, we highly recommend that you test your insert/read methods with log calls. Often, students do not realize their code has SQL syntax errors until the app is run and the methods are called which results in the project not passing.
 
 # Functionality
 
-Main Screen Updates:
+Compile Time Errors:
 
-Stories shown on the main screen update properly whenever new news data is fetched from the API.
+The code compiles without errors.
 
-Errors:
+Table Definition:
 
-The code runs without errors.
+There exists a contract class that defines name of table and constants.
 
-Story Intents:
+Inside the contract class, there is an inner class for each table created.
 
-Clicking on a story uses an intent to open the story in the user’s browser.
+The contract contains at minimum constants for the Product Name, Price, Quantity, Supplier Name, and Supplier Phone Number.
 
-API Query:
+Table Creation:
 
-App queries the content.guardianapis.com api to fetch news stories related to the topic chosen by the student, using either the ‘test’ api key or the student’s key.
+There exists a subclass of SQLiteOpenHelper that overrides onCreate() and onUpgrade().
 
-JSON Parsing:
+Data Insertion:
 
-The JSON response is parsed correctly, and relevant information is stored in the app.
+There is a single insert method that adds:
 
-No Data Message:
+* Product Name
+* Price
+* Quantity
+* Supplier Name
+* Supplier Phone Number
+* It is up to you to decide what datatype (e.g. INTEGER, STRING) each of these values should be; however, it is required that there are at least 2 different datatypes (e.g. INTEGER, STRING).
 
-When there is no data to display, the app shows a default TextView that informs the user how to populate the list.
+Data Reading:
 
-Response Validation:
-
-The app checks whether the device is connected to the internet and responds appropriately. The result of the request is validated to account for a bad server response or lack of server response.
-
-Use of Loaders:
-
-Networking operations are done using a Loader rather than an AsyncTask.
-
-External Libraries and Packages:
-
-The intent of this project is to give you practice writing raw Java code using the necessary classes provided by the Android framework; therefore, the use of external libraries for the core functionality will not be permitted to complete this project.
+There is a single method that uses a Cursor from the database to perform a query on the table to retrieve at least one column of data. Also the method should close the Cursor after it's done reading from it.
 
 # Code Readability
 
@@ -76,6 +57,12 @@ All variables, methods, and resource IDs are descriptively named such that anoth
 
 Formatting:
 
-The code is properly formatted i.e. there are no unnecessary blank lines; there are no unused variables or methods; there is no commented out code.
+The code is properly formatted:
+
+* No unnecessary blank lines
+* No unused variables or methods
+* No commented out code
+
+The code also has proper indentation when defining variables and methods.
    
    
