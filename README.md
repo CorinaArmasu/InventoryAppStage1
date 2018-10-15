@@ -64,5 +64,15 @@ The code is properly formatted:
 * No commented out code
 
 The code also has proper indentation when defining variables and methods.
+
+![screenshot_20181014-222059](https://user-images.githubusercontent.com/34723009/46942139-5922bd00-d075-11e8-9735-79c842887aaf.png)
+
+![screenshot_20181014-222131](https://user-images.githubusercontent.com/34723009/46942142-5b851700-d075-11e8-9731-032919a9eaca.png)
+
+![screenshot_20181014-222305](https://user-images.githubusercontent.com/34723009/46942147-5de77100-d075-11e8-8466-b3817eff41a4.png)
+
+![screenshot_20181014-222309](https://user-images.githubusercontent.com/34723009/46942170-663fac00-d075-11e8-8bae-032f46b9b7fa.png)
+
+![screenshot_20181014-222315](https://user-images.githubusercontent.com/34723009/46942173-68096f80-d075-11e8-8c88-bed48494e1a3.png)
    
    
